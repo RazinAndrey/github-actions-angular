@@ -6,7 +6,7 @@ jobs:
     steps:
       # берем текущий код с виртуальной машины
       - name: Get repository code
-        uses: action/checkout@v6
+        uses: actions/checkout@v6
 
       # установка зависимостей
       - name: Install dependencies
