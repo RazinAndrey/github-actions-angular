@@ -8,7 +8,7 @@ on:
 
     # игнорирем файлы, чтоб лишний раз не запускать изменения
     paths-ignore:
-      - './github/workflows/*'
+      - '.github/workflows/*'
 
 jobs:
   test:
