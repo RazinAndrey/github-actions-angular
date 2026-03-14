@@ -1,9 +1,14 @@
 name: Deploy Angular App
-# делаем push только в main
+
 on:
+  # делаем push только в main
   push:
     branches:
       - main
+
+    # игнорирем файлы, чтоб лишний раз не запускать изменения
+    paths-ignore:
+      - './github/workflows/*'
 jobs:
   test:
     # запускаем на ubuntu
