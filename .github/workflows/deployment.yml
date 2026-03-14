@@ -9,7 +9,7 @@ on:
     # игнорирем файлы, чтоб лишний раз не запускать изменения
     paths-ignore:
       - './github/workflows/*'
-npnpnjobs:
+jobs:
   test:
     # запускаем на ubuntu
     runs-on: ubuntu-latest
