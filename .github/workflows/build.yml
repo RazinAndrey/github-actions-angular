@@ -14,9 +14,9 @@ jobs:
         run: npm run build
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
-          path: build
+          path: dist
           name: build-files # cкладываем сюда
 
   deploy:
@@ -24,6 +24,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get build project
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v7
         with:
           name: build-files # берем от сюда
